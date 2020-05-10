@@ -18,9 +18,9 @@ driver = webdriver.Chrome("/Users/satwantsinghhanspal/Downloads/First_Repository
 
 driver.get("https://www.facebook.com")
 name = driver.find_element_by_id("email")
-name.send_keys("Enter email")
+name.send_keys("Enter email here")
 pwrd = driver.find_element_by_id("pass")
-pwrd.send_keys("Enter password")
+pwrd.send_keys("Enter password here")
 driver.find_element_by_id("loginbutton").click()
 time.sleep(2)
 driver.find_element_by_tag_name('body').send_keys(Keys.ESCAPE)
@@ -29,7 +29,7 @@ driver.find_element_by_tag_name('body').send_keys(Keys.ESCAPE)
 #search_bar.send_keys("Search")
 #search_bar.send_keys(Keys.ENTER)
 #####################################################################################
-lst =[list of people]
+lst =["https://www.facebook.com/shruti.batra.96"]
 for i in lst:
     # driver.find_element_by_tag_name('body').send_keys(Keys.ESCAPE)
     link = driver.get(i)
@@ -39,7 +39,13 @@ for i in lst:
     driver.find_element_by_xpath("//*[@class='_42ft _4jy0 _4jy4 _517h _51sy']").click()
     time.sleep(8)
     content = driver.find_elements_by_xpath("//div[@class='_1mf _1mj']")
-    content[1].send_keys('Hello this is an automated message please ignore')
+    content[1].send_keys('Hello I added Feature to log out also')
     content[1].send_keys(Keys.ENTER)
     time.sleep(2)
-driver.close()
+
+driver.find_element_by_id("userNavigationLabel").click()
+time.sleep(5)
+driver.find_element_by_xpath("//ul[@class='_54nf']/li[11]").click()
+
+
+
