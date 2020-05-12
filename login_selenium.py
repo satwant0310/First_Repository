@@ -29,7 +29,7 @@ driver.find_element_by_tag_name('body').send_keys(Keys.ESCAPE)
 #search_bar.send_keys("Search")
 #search_bar.send_keys(Keys.ENTER)
 #####################################################################################
-lst =["https://www.facebook.com/shruti.batra.96"]
+lst =["enter the list of names"]
 for i in lst:
     # driver.find_element_by_tag_name('body').send_keys(Keys.ESCAPE)
     link = driver.get(i)
