@@ -1,6 +1,7 @@
 import random
 win_number=random.randint(1,11)
 # random.randrange(1,11) this is the way to generate random number in python
+# added a test comment
 ch = 0
 while ch >= 0:
     if ch == 0:
